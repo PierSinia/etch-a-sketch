@@ -15,6 +15,14 @@
         //newDiv.textContent = `r: ${r} c: ${c}`;
         newDiv.className = "box";
         container.appendChild(newDiv);
+
+        newDiv.addEventListener('mouseenter', () => {
+          newDiv.style.backgroundColor = 'lightblue';
+        });
+
+        newDiv.addEventListener('mouseleave', () => {
+          newDiv.style.backgroundColor = 'blue';
+        });
       }
     }
     </script>
