@@ -40,7 +40,15 @@
       //Remove current grid
       document.querySelectorAll('.box').forEach(e => e.remove());
      //container.removeChild(box);
-      createGrid(number);
+     
+
+    createGrid(number);
+    document.querySelectorAll(".box").forEach(el => {
+    el.style.flexBasis = `calc(${100 / number}% - 5px)`;// Corrected formula
+    el.style.height = `calc(${960 / number}px - 10px)`;
+
+    });
+      
     });
     
     </script>

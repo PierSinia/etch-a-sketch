@@ -3,6 +3,7 @@
   flex-wrap: wrap;
   width: 960px;
   gap: 5px; /* Adds spacing between boxes */
+  height: 960px;
 }
 
 .box {
